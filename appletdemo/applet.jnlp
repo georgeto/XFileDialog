@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="" href="">
+    <information>
+        <title>helloapplet</title>
+        <vendor>stevpan</vendor>
+</information>
+
+    <resources os="Windows" arch="x86">
+	<nativelib href="win_x86_dll.jar" />
+    </resources>
+
+    <resources os="Windows" arch="amd64">
+	<nativelib href="win_x64_dll.jar" />
+    </resources>
+
+    <resources>
+        <!-- Application Resources -->
+        <j2se version="1.6+"
+              href="http://java.sun.com/products/autodl/j2se" />
+        <jar href="hello.jar" main="true" />
+    </resources>
+
+
+    <applet-desc 
+         name="helloapplet"
+         main-class="helloapplet"
+         width="640"
+         height="480">
+     </applet-desc>
+     <update check="background"/>
+</jnlp>					
+

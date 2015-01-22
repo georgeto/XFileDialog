@@ -1,0 +1,20 @@
+<body>
+      <!-- In my opinion, deployJava.js (from Sun) should always be on 
+       your own server!
+
+        Otherwise, all your applets may be damaged when Sun changed something 
+	in this file, or Java.com is blocked by Firewall for some reason.  
+
+	I've met such case several months ago, and it was the the worst 
+	experience in my programming life so far. 
+	--> 
+
+
+    <script src="deployJava.js"></script>
+    <script> 
+        var attributes = { code:'helloapplet',  width:640, height:480} ; 
+        var parameters = {jnlp_href: 'applet.jnlp'} ; 
+        deployJava.runApplet(attributes, parameters, '1.6'); 
+    </script>
+</body>
+
